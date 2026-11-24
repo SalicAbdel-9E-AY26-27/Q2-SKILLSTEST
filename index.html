@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Bars & Forms</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">
+    <img src="https://files.orangeapps.ph/disk001/School_Files/1/school-66/school_profile/1724046763-1128.png"
+    style="height: 50pxx; width: 50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">Contact</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary" type="button">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<h1 class="text-center mt-5 text-white">OBMC Student Enrollment Form</h1>
+<div class="container bg-white p-5 mt-5 text-dark rounded bg-opacity-75">
+
+    <form action="" method="post">
+
+        <h2>Student Information</h2>
+        <div class="row">
+
+        <div class="col-md-6">
+        <label for="form-name" class="form-label">First Name:</label> 
+        <input type="text" name="username" id="form-name" class="textinput form-control">
+        </div>
+      
+        <div class="col-md-6">
+        <label for="form-name" class="form-label">Last Name:</label> 
+        <input type="text" name="username" id="form-name" class="textinput form-control">
+        </div>
+
+        <div class="col-md-4">
+        <label for="sizes">Birth Date:</label>
+        <input type="date" class="form-control" id="nativeDate">
+        </div>    
+        
+        <div class="col-md-4">
+        <label for="sex">Sex:</label>
+        <select name="sex" id="sex" class="form-select">
+        <option>Male</option>
+        <option>Female</option>
+        </select>
+        </div> 
+
+        <div class="col-md-4">
+        <label for="level">Grade Level:</label>
+        <select name="level" id="level" class="form-select">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        </select>
+        </div> 
+
+        </div>
+`     
+        <h2>Contact Information</h2>
+        <div class="mb-3">
+        <label for="email" class="form-label">Email Adress:</label>
+        <input type="email" class="form-control" placeholder="Enter Email" name="email">
+        </div>
+        
+        <div class="mb-3">
+        <label for="email" class="form-label">Contact Number:</label>
+        <input type="email" class="form-control" placeholder="Enter Number" name="email">
+        </div>
+
+        <h2>Other Information</h2>
+        <p>Mode Of Learning:</p>
+        <div class="form-check">
+          <label><input type="radio" name="color" value="black" class="form-check-input">Online</label> 
+          </div>
+
+          <div class="form-check">
+          <label><input type="radio" name="color" value="silver" class="form-check-input">Face To Face</label>
+          </div>
+          <br>
+          <div class="form-check">
+          <label><input type="radio" name="color" value="silver" class="form-check-input">I understand and confirm
+          that the information provided is true and complete.</label>
+          </div>
+          <br>
+          <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-primary col-md-12">Submit</button>
+          </div>
+    </form>
+  <br>
+<footer class="footer mt-auto py-3 bg-light text-center border-top">
+  <div class="container">
+    <span class="text-muted">© 2026 O.B. Montessori Center. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
